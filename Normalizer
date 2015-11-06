@@ -1,0 +1,7 @@
+  normal_data = []
+    
+  for column in raw_data:                   
+      xmax = np.amax(raw_data,axis=0)
+      xmin = np.amin(raw_data,axis=0)
+      normalx = (column-xmin)/(xmax-xmin)
+      normal_data.append(normalx)
