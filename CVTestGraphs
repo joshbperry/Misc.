@@ -67,7 +67,7 @@ def setAxes(x,y,s1="Title",s2="X data",s3= "Ydata",legend = True):
     if legend: plt.legend(loc=0)
     return
 
-#main method
+#main
 #parameters:
 #       Ytmax - True Y training values of worst fit
 #       Ytpmax - Predicted Y training values of worst fit
