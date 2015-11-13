@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+f = open("CSV_filename.csv")    #opens the file
+f.readline()    # gets rid of the first row (the labels)
+
+data =  np.loadtxt(f, delimiter = ',')  #makes file into numpy array
+dataTemp = data[:, np.newaxis]
+
+# these numbers corrispond to columns in the spreadsheet
+#                   |
+#                   V
+a = (dataTemp[:, :, 0])
+b = (dataTemp[:, :, 1])
+c = (dataTemp[:, :, 2])
+d = (dataTemp[:, :, 3])
+e = (dataTemp[:, :, 4])
+f = (dataTemp[:, :, 5])
+g = (dataTemp[:, :, 6])
+h = (dataTemp[:, :, 7])
+i = (dataTemp[:, :, 8])
+
+f.close()
